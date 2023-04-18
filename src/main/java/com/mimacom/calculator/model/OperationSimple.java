@@ -1,24 +1,24 @@
 package com.mimacom.calculator.model;
 
-public class Operation {
+public class OperationSimple {
 
     private String operations;
     private int value1;
     private int value2;
     private int value3;
 
-    public Operation() {
+    public OperationSimple() {
     }
 
-    public Operation(int value3) {
+    public OperationSimple(int value3) {
         this.value3 = value3;
     }
 
-    public Operation(String operation) {
+    public OperationSimple(String operation) {
         this.operations = operation;
     }
 
-    public Operation(int value1, int value2) {
+    public OperationSimple(int value1, int value2) {
         this.value1 = value1;
         this.value2 = value2;
     }

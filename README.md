@@ -41,4 +41,6 @@ docker run -p8080:8080 demo-calculator:latest
 
 # Notes about improvements
 
-It might be better to use DTOs to transfer values to service, encapsulating them to improve the code. 
+- It might be better to use DTOs to transfer values to service, encapsulating them to improve the code. 
+- Include swagger for RESTFull APIs. 
+- Advanced calculator, for scientific operations. 

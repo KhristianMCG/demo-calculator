@@ -10,17 +10,17 @@ public class Operation {
     public Operation() {
     }
 
-    public Operation(int c) {
-        this.value3 = c;
+    public Operation(int value3) {
+        this.value3 = value3;
     }
 
     public Operation(String operation) {
         this.operations = operation;
     }
 
-    public Operation(int a, int b) {
-        this.value1 = a;
-        this.value2 = b;
+    public Operation(int value1, int value2) {
+        this.value1 = value1;
+        this.value2 = value2;
     }
 
 

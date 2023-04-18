@@ -28,10 +28,5 @@ public class CalculatorSimpleService {
         model.setValue2(0);
         return model;
     }
-
-    public Operation clearAdvanced(Operation model){
-        model.setValue3(0);
-        return model;
-    }
 }
 

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+// @Controller is allow to use the calculator-ui swapping instead RestController
 public class CalculatorSimpleController {
 
     private static final String OPERATION = "operation";
@@ -54,13 +55,6 @@ public class CalculatorSimpleController {
     @PostMapping(value = "/calculator", params = "clearSimple")
     public String clearSimple(@ModelAttribute("operation") Operation operation, Model model) {
         model.addAttribute(OPERATION, calculatorSimpleService.clearSimple(operation));
-        model.addAttribute(RESULT, 0);
-        return CALCULATOR_UI;
-    }
-
-    @PostMapping(value = "/calculator", params = "clearAdvanced")
-    public String clearAdvanced(@ModelAttribute("operation") Operation operation, Model model) {
-        model.addAttribute(OPERATION, calculatorSimpleService.clearAdvanced(operation));
         model.addAttribute(RESULT, 0);
         return CALCULATOR_UI;
     }

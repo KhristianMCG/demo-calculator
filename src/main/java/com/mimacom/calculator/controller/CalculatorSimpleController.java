@@ -14,16 +14,16 @@ public class CalculatorSimpleController {
 
     private static final String OPERATION = "operation";
     private static final String RESULT = "result";
-    private static final String CALCULATOR_UI = "calculator-ui.html";
+    private static final String CALCULATOR_UI = "calculator-ui";
 
-    Operation operations = new Operation();
+    Operation operation = new Operation();
 
     @Autowired
     private CalculatorSimpleService calculatorSimpleService;
 
-    @GetMapping("/")
+    @GetMapping("/calculator")
     public String getCalculatorUi(Model model) {
-        model.addAttribute(OPERATION, operations);
+        model.addAttribute(OPERATION, operation);
         return CALCULATOR_UI;
     }
 

@@ -1,6 +1,7 @@
 ## Demo Calculator
 
-This is a microservice web app and REST Api to simulate simple calculator operations.
+This is a microservice web app and REST Api to simulate simple calculator operations, also is prepare to deploy with containers 
+orchestration,
 
 # Initialization 
 
@@ -37,3 +38,7 @@ docker build --tag=demo-calculator:latest .
 ````
 docker run -p8080:8080 demo-calculator:latest
 ````
+
+# Notes about improvements
+
+Maybe it could be better using DTOs to transfer values to services encapsulating them to improve the code. 

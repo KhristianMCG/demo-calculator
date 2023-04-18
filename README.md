@@ -10,11 +10,11 @@ mvn springboot:run listening on port 8080 by default
 # Usage
 
 Is provided two ways to test the calculator, one with controller and user-interface in thymeleaf. 
-The other way is pure RESTfull API.
+The other way is pure RESFull API.
 
 ## User Interface
 
-Accesing to http://localhost:8080/calculator will show user interface.
+Accessing to http://localhost:8080/calculator will show user interface.
 
 ## RESTfull API
 ````
@@ -30,7 +30,7 @@ Accesing to http://localhost:8080/calculator will show user interface.
 # /calculator/divide/{valuea}/{valueb}
 ````
 
-## Docker contenerization
+## Docker containerization
 
 ````
 docker build --tag=demo-calculator:latest .

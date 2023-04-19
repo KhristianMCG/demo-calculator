@@ -16,7 +16,12 @@ The other way is pure RESFull API.
 
 Accessing to http://localhost:8080/calculator will show user interface.
 
+![](C:\Development\Mimacom\demo-calculator\calculator-ui.png)
+
 ## RESTfull API
+
+![](C:\Development\Mimacom\demo-calculator\RESTFull-API.png)
+
 ````
 # /calculator/add/{valuea}/{valueb}
 ````
@@ -29,6 +34,10 @@ Accessing to http://localhost:8080/calculator will show user interface.
 ````
 # /calculator/divide/{valuea}/{valueb}
 ````
+
+There is provided to handling custom generic operation exceptions as follows.
+
+![](C:\Development\Mimacom\demo-calculator\RESTFull-API-Exception.png)
 
 ## Docker containerization
 

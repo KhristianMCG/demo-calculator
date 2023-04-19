@@ -1,11 +1,17 @@
 ## Demo Calculator
 
 This is a microservice web app and REST Api to simulate simple calculator operations, also is prepare to deploy with containers 
-orchestration. 
+orchestration.
 
+# Build service
+
+````
+mvn clean install -U
+````
 # Initialization 
-
+````
 mvn springboot:run listening on port 8080 by default
+````
 
 # Usage
 
@@ -16,11 +22,11 @@ The other way is pure RESFull API.
 
 Accessing to http://localhost:8080/calculator will show user interface.
 
-![](C:\Development\Mimacom\demo-calculator\calculator-ui.png)
+![](C:\Development\Mimacom\demo-calculator\images\calculator-ui.png)
 
 ## RESTfull API
 
-![](C:\Development\Mimacom\demo-calculator\RESTFull-API.png)
+![](C:\Development\Mimacom\demo-calculator\images\RESTFull-API.png)
 
 ````
 # /calculator/add/{valuea}/{valueb}
@@ -37,7 +43,11 @@ Accessing to http://localhost:8080/calculator will show user interface.
 
 There is provided to handling custom generic operation exceptions as follows.
 
-![](C:\Development\Mimacom\demo-calculator\RESTFull-API-Exception.png)
+![](C:\Development\Mimacom\demo-calculator\images\RESTFull-API-Exception.png)
+
+## Spring Fox Is provided
+
+![](C:\Development\Mimacom\demo-calculator\images\springFox.png)
 
 ## Docker containerization
 
@@ -51,5 +61,4 @@ docker run -p8080:8080 demo-calculator:latest
 # Notes about improvements
 
 - It might be better to use DTOs to transfer values to service, encapsulating them to improve the code. 
-- Include swagger for RESTFull APIs. 
 - Advanced calculator, for scientific operations. 

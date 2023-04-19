@@ -1,13 +1,12 @@
 package com.mimacom.calculator.controller;
 
+import com.mimacom.calculator.exception.ExceptionCalculator;
 import com.mimacom.calculator.service.CalculatorRestControllerSimpleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.request.WebRequest;
 
 import java.math.BigDecimal;
 
@@ -37,5 +36,10 @@ public class CalculatorSimpleRestController {
     @PostMapping(value = "/divide/{valuea}/{valueb}" , produces = APPLICATION_JSON)
     public ResponseEntity<BigDecimal> divide(@PathVariable String valuea, @PathVariable String valueb) {
         return new ResponseEntity<>(calculatorRestControllerSimpleService.divide(valuea, valueb), HttpStatus.OK);
+    }
+
+    @ExceptionHandler(value = ExceptionCalculator.class)
+    public ResponseEntity<Object> handleExceptionCalculator(ExceptionCalculator exceptionCalculator) {
+        return new ResponseEntity<>("Calculator Operation Exception", HttpStatus.BAD_REQUEST);
     }
 }

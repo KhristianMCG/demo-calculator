@@ -22,11 +22,11 @@ The other way is pure RESFull API.
 
 Accessing to http://localhost:8080/calculator will show user interface.
 
-![](C:\Development\Mimacom\demo-calculator\images\calculator-ui.png)
+![](images\calculator-ui.png)
 
 ## RESTfull API
 
-![](C:\Development\Mimacom\demo-calculator\images\RESTFull-API.png)
+![](images\RESTFull-API.png)
 
 ````
 # /calculator/add/{valuea}/{valueb}
@@ -43,11 +43,11 @@ Accessing to http://localhost:8080/calculator will show user interface.
 
 There is provided to handling custom generic operation exceptions as follows.
 
-![](C:\Development\Mimacom\demo-calculator\images\RESTFull-API-Exception.png)
+![](images\RESTFull-API-Exception.png)
 
-## Spring Fox Is provided
+## Spring Fox available
 
-![](C:\Development\Mimacom\demo-calculator\images\springFox.png)
+![](images\springFox.png)
 
 ## Docker containerization
 

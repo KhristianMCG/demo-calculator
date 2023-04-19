@@ -1,16 +1,18 @@
 package com.mimacom.calculator.model;
 
+import java.math.BigDecimal;
+
 public class OperationSimple {
 
     private String operations;
-    private int value1;
-    private int value2;
-    private int value3;
+    private BigDecimal value1;
+    private BigDecimal value2;
+    private BigDecimal value3;
 
     public OperationSimple() {
     }
 
-    public OperationSimple(int value3) {
+    public OperationSimple(BigDecimal value3) {
         this.value3 = value3;
     }
 
@@ -18,25 +20,25 @@ public class OperationSimple {
         this.operations = operation;
     }
 
-    public OperationSimple(int value1, int value2) {
+    public OperationSimple(BigDecimal value1, BigDecimal value2) {
         this.value1 = value1;
         this.value2 = value2;
     }
 
 
-    public int getValue1() {
+    public BigDecimal getValue1() {
         return value1;
     }
 
-    public void setValue1(int value1) {
+    public void setValue1(BigDecimal value1) {
         this.value1 = value1;
     }
 
-    public int getValue2() {
+    public BigDecimal getValue2() {
         return value2;
     }
 
-    public void setValue2(int value2) {
+    public void setValue2(BigDecimal value2) {
         this.value2 = value2;
     }
 
@@ -48,11 +50,11 @@ public class OperationSimple {
         this.operations = operations;
     }
 
-    public int getValue3() {
+    public BigDecimal getValue3() {
         return value3;
     }
 
-    public void setValue3(int value3) {
+    public void setValue3(BigDecimal value3) {
         this.value3 = value3;
     }
 }
